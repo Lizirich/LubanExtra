@@ -31,7 +31,7 @@ internal class NewtonSoftJsonDeserializeVisitor : ITypeFuncVisitor<string, strin
     
     public string Accept(TUInt type, string x, string y, int z)
     {
-        return $"{y} = (ulong){x};";
+        return $"{y} = (uint){x};";
     }
 
     public string Accept(TLong type, string x, string y, int z)

@@ -29,7 +29,7 @@ public class BinaryUnderlyingDeserializeVisitor : ITypeFuncVisitor<string, strin
     
     public string Accept(TUInt type, string bufName, string fieldName, int depth)
     {
-        return $"{fieldName} = {bufName}.ReadULong();";
+        return $"{fieldName} = {bufName}.ReadUint();";
     }
 
     public string Accept(TLong type, string bufName, string fieldName, int depth)
